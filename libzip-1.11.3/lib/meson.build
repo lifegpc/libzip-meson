@@ -204,4 +204,4 @@ zip = library('zip',
     version: '5.5',
 )
 
-libzip_dep = declare_dependency(include_directories: include_directories('.'), link_with: zip)
+libzip_dep = declare_dependency(include_directories: include_directories('.', pbdir), link_with: zip)
