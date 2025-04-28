@@ -1,0 +1,22 @@
+option('enable_commoncrypto', type: 'feature', value: 'auto', description: 'Enable use of CommonCrypto')
+option('enable_gnutls', type: 'feature', value: 'auto', description: 'Enable use of GnuTLS')
+option('enable_mbedtls', type: 'feature', value: 'auto', description: 'Enable use of mbed TLS')
+option('enable_openssl', type: 'feature', value: 'auto', description: 'Enable use of OpenSSL')
+option('enable_windows_crypto', type: 'feature', value: 'auto', description: 'Enable use of Windows cryptography libraries')
+
+option('enable_bzip2', type: 'feature', value: 'auto', description: 'Enable use of BZip2')
+option('enable_lzma', type: 'feature', value: 'auto', description: 'Enable use of LZMA')
+option('enable_zstd', type: 'feature', value: 'auto', description: 'Enable use of Zstandard')
+
+option('enable_fdopen', type: 'boolean', value: true, description: 'Enable zip_fdopen, which is not allowed in Microsoft CRT secure libraries')
+
+option('build_tools', type: 'feature', value: 'auto', description: 'Build tools in the src directory (zipcmp, zipmerge, ziptool)')
+option('build_regress', type: 'feature', value: 'auto', description: 'Build regression tests')
+option('build_ossfuzz', type: 'feature', value: 'auto', description: 'Build fuzzers for ossfuzz')
+option('build_examples', type: 'feature', value: 'auto', description: 'Build examples')
+option('build_doc', type: 'feature', value: 'auto', description: 'Build documentation')
+
+option('do_install', type: 'feature', value: 'auto', description: 'Install libzip and the related files')
+option('shared_lib_versionning', type: 'boolean', value: true, description: 'Add SO version in .so build')
+
+option('enable_uwp', type: 'boolean', value: false, description: 'Enable UWP support')
